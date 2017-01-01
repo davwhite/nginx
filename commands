@@ -1,0 +1,5 @@
+# build the image
+docker build -t nginx-proxy .
+
+#run the container as a daemon
+docker run -dt -p 80:80 --name nginx00 nginx-proxy
